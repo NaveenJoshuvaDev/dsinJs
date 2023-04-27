@@ -35,5 +35,19 @@ const restaurant = {
 ```
   const [first, ,second] = restaurant.categories;
   console.log(first, second);//Italian Vegetatrian
-  
+
 ```
+- Likewise no need of creating newvariables to retrieve elements ,However we can skip the elements to get the value.
+
+- How to switch two variables
+```
+  let [main, ,secondary] = restaurant.categories;
+  console.log(main, secondary);
+
+  //old school technique
+  const temp= main;
+  main = secondary;
+  secondary = temp;
+  console.log(main, secondary);//vegetarian Italian
+  
+  ```

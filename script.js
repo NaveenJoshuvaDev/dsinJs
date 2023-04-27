@@ -16,6 +16,17 @@ const restaurant = {
   console.log(x,y,z);
 
   const [first, ,second] = restaurant.categories;
-  console.log(first, second);//Italian Pizzeria
+  console.log(first, second);//Italian Vegetarian
+  //How to switch two variables
+
+  let [main, ,secondary] = restaurant.categories;
+  console.log(main, secondary);
+
+  //old school technique
+  const temp= main;
+  main = secondary;
+  secondary = temp;
+  console.log(main, secondary);//vegetarian Italian
+
  
   
