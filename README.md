@@ -61,4 +61,25 @@ const restaurant = {
   console.log(main, secondary);//vegetarian Italian
 
   ```
+  **How to retrieve values from nested array?**
+- nested array destructuring
+```
+const nested = [2,4,[5,6]];
+const [i, ,j]= nested;
+console.log(i, j);
 
+```
+ **what if we want individual values**
+ - destructuring inside destructuring
+ ```
+ const [i, , [j, k]] = nested;
+ console.log(i, j,k);
+
+ ```
+ **setting default values using destructuring**
+ - Use case if we don't know the length of the array and getting data from an API.
+```
+ const[p=1, q=1, r=1] = [8, 9];
+ console.log(p,q,r);
+
+```
