@@ -49,5 +49,15 @@ const restaurant = {
   main = secondary;
   secondary = temp;
   console.log(main, secondary);//vegetarian Italian
-  
+
   ```
+  - we use let for reassigning variables.
+  ### Now switching variables using destructuring assignment
+  ```
+  let [main, ,secondary] = restaurant.categories;
+  console.log(main, secondary);//Italian Vegetatrian
+  [main, secondary]=[secondary, main];
+  console.log(main, secondary);//vegetarian Italian
+
+  ```
+

@@ -23,10 +23,13 @@ const restaurant = {
   console.log(main, secondary);
 
   //old school technique
-  const temp= main;
-  main = secondary;
-  secondary = temp;
-  console.log(main, secondary);//vegetarian Italian
+//   const temp= main;
+//   main = secondary;
+//   secondary = temp;
+//   console.log(main, secondary);vegetarian Italian
+//Now switching variables using destructuring assignment
+[main, secondary]=[secondary, main];
+console.log(main, secondary);
 
  
   
