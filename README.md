@@ -40,6 +40,7 @@ const restaurant = {
 - Likewise no need of creating newvariables to retrieve elements ,However we can skip the elements to get the value.
 
 - How to switch two variables
+- we use let for reassigning variables.
 ```
   let [main, ,secondary] = restaurant.categories;
   console.log(main, secondary);
@@ -51,7 +52,7 @@ const restaurant = {
   console.log(main, secondary);//vegetarian Italian
 
   ```
-  - we use let for reassigning variables.
+
   **Now switching variables using destructuring assignment**
   ```
   let [main, ,secondary] = restaurant.categories;
